@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6, p{
 .social-icons-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .social-icons {
@@ -378,6 +378,7 @@ height: 40px;
     max-width: 264px;
 }
 .container-social-links{
+    margin-right: 120px;
 
 }
 .footer-link:hover, .footer-link:focus{
@@ -386,6 +387,7 @@ height: 40px;
 .footer-paragraph{
     font-weight: 500;
         font-size: 16px;
+        margin-bottom: 16px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
         line-height: 1.5;
