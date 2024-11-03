@@ -8,9 +8,14 @@ a {
 }
 ul {
     list-style: none;
+    padding: 0 ;
+    margin: 0;
 }
 img {
     display: block;
+}
+h1, h2, h3, h4, h5, h6, p{
+ margin: 0;
 }
 .head {
     border-bottom: 1px solid #e7e9fc
@@ -24,7 +29,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 16px;
+    padding: 24px 0 24px 0;
     display: inline-block;
 }
 .navigation {
@@ -49,12 +54,13 @@ img {
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: #2e2f42;
-}
-.silka-head:hover, .silka-head:focus{
-    color: #404bbf;
+            position: relative;
 }
 .address {
     font-style: normal;
+    margin: 0;
+    padding-top: 24px ;
+    padding-bottom: 24px;
 }
 .silka-adress {
     font-size: 16px;
@@ -67,22 +73,39 @@ img {
 }
 .navi {
     display: flex;
+    justify-content: space-between;
+}
+.studios{
+    color: #404bbf;
+}
+.studios::after {
+   content: "";
+   background-color: #404BBF;
+   width: 100%;
+   height: 4px;
+   position: absolute;
+   left: 0;
+   bottom: -3px;
+   border-radius: 2px;
 }
 
 
 
 
 
-
-
+/* ONE SECTION */
 
 
 
 
 
 .section-one {
+    margin: 0 auto;
     padding: 188px 0;
     background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    max-width: 1440px;
 }
 .container {
     width: 1158px;
@@ -126,7 +149,7 @@ img {
 
 
 
-
+/* TWO SECTION */
 
 
 
@@ -218,7 +241,7 @@ img {
 
 
 
-
+/* THREE SECTION */
 
 
 
@@ -286,7 +309,7 @@ height: 40px;
 
 
 
-
+/* FOUR SECTION */
 
 
 
@@ -321,7 +344,7 @@ height: 40px;
 
 
 
-
+/* FOOTER */
 
 
 
@@ -342,4 +365,20 @@ height: 40px;
 }
 .container-social-links{
 
+}
+.footer-link:hover, .footer-link:focus{
+   background-color: #31d0aa;
+}
+.footer-paragraph{
+    font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        line-height: 1.5;
+        padding-bottom: 16px;
+}
+.footer-korobka{
+    align-items: baseline;
+    display: flex;
+    gap: 120px;
 }
