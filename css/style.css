@@ -376,10 +376,6 @@ height: 40px;
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-.container-social-links{
-    margin-right: 120px;
-
-}
 .footer-link:hover, .footer-link:focus{
    background-color: #31d0aa;
 }
@@ -402,4 +398,7 @@ height: 40px;
     display: flex;
     justify-content: center;
     gap: 16px;
+}
+.korobka{
+    margin-right: 120px;
 }
