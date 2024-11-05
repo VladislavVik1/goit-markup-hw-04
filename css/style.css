@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .silka-head{
     padding: 24px 0;
+    display: block;
         font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -63,10 +64,11 @@ h1, h2, h3, h4, h5, h6, p{
 .address {
     font-style: normal;
     margin: 0;
-    padding-top: 24px ;
-    padding-bottom: 24px;
 }
 .silka-adress {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -79,6 +81,7 @@ h1, h2, h3, h4, h5, h6, p{
 .navi {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .studios{
     color: #404bbf;
@@ -263,7 +266,6 @@ h1, h2, h3, h4, h5, h6, p{
 .section-three {
     background-color: #F4F4FD;
     padding: 120px 0;
-    margin-bottom: 8px;
 }
 .zagolovokh-two {
     font-size: 36px;
@@ -272,8 +274,7 @@ h1, h2, h3, h4, h5, h6, p{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    width: calc((100% - 48px) / 3);
-    margin: 0 auto 72px;
+    margin: 0 0 72px;
 }
 .spisok-three {
     display: flex;
@@ -297,8 +298,10 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-align: center;
     margin-bottom: 8px;
+}
+.add-class{
+    text-align: center;
 }
 .paragraph-two {
     font-size: 16px;
@@ -306,6 +309,7 @@ h1, h2, h3, h4, h5, h6, p{
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    padding-bottom: 8px;
 }
 .box-section-three{
 display: flex;
@@ -376,6 +380,9 @@ height: 40px;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.shadow:hover{
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 8);
+}
 
 
 
@@ -409,13 +416,10 @@ height: 40px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
         line-height: 1.5;
-        padding-bottom: 16px;
 }
 .footer-container{
     align-items: baseline;
     display: flex;
-    gap: 120px;
-    margin-right: 120px;
 }
 .social-icons-list-two {
     display: flex;
@@ -424,4 +428,15 @@ height: 40px;
 }
 .container-link-paragraph-footer{
     margin-right: 120px;
+}
+.logo-footer{
+        font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.17;
+            margin-right: 76px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #4d5ae5;
+            display: inline-block;
 }
